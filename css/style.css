@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+body{
+    margin: 0px;
+}
+
+:root{
+    --primary-color:#23A6F0;
+    --primary-text-color:#252B42;
+    --secondary-text-color:#737373;
+    --homepage_banner-color:#b2e3ff;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+margin: auto;
+display: flex;
+justify-content: center;
+background-color: #ffffff;
+}
+.container{
+    max-width: 1050px;
+    margin: auto;
+}
+
+.title_bar{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    padding: 0px 0px 20px;
+}
+
+.brandName{
+    font-size: 24px;
+    color:var(--primary-text-color);
+    padding: 10px;
+}
+
+.nav_bar{
+    display: flex;
+    padding: 5px;
+    gap: 250px;
+    align-items: center;
+}
+
+.nav_bar ul{
+    display: flex;
+    list-style: none;
+    gap: 21px;
+    font-size: 14px;
+    }
+
+a{
+    text-decoration: none;
+    color:var(--secondary-text-color);
+   } 
+
+.title_buttons{
+    display: flex;
+    gap: 10px;
+}
+
+button{
+    padding: 15px 25px 15px 25px;
+}
+
+.blank_btn{
+    background-color: transparent;
+    border: 0;
+    color: var(--primary-color);
+}
+
+.filled_btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background:var(--primary-color);
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+.homePage{
+    background-color:var(--homepage_banner-color);
+}
+
+.container_home{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background: var(--homepage_banner-color);
+    max-width: 1300px;
+    margin: auto;
+ }
+
+ .content{
+    width: 675px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+ }
+
+ .content h5{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: var(--primary-color);
+ }
+
+ .content h1{
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: var(--primary-text-color);
+ }
+
+ p{
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 30px;
+    color:var(--secondary-text-color);
+ }
+
+  .unfilled_btn{
+    width: 165px;
+    background:none;
+    border-radius: 5px;
+    color: var(--primary-color);
+    border:  1px solid var(--primary-color);
+  }
+  .homePage_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .homePage_cards .container{
+    max-width: 1040px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:68px
+  }
+
+ .card{
+padding: 35px 40px;
+max-width: 328px;
+box-shadow: 0px 13px 19px 0px #00000012;
+ ;
+
+ }
+ .card_btn{
+    border-radius: 10px;
+    padding: 22px 19px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #ffffff;
+ }
+ .card h1{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: var(--primary-text-color);
+}
+ .card p{
+    font-size: 14px;
+    line-height: 20px;
+ }
+ button i{
+    font-size: 30px;
+ }
+ .line_block {
+ background-color: #E74040;
+ width: 50px;
+ height:2px;
+ color: #E74040;
+ }
