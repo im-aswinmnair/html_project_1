@@ -4,7 +4,7 @@
     font-weight: 700;
 }
 body{
-    margin: 0px;
+    margin: 0;
 }
 
 :root{
@@ -17,12 +17,26 @@ body{
 img{
     width: 100%;
 }
+p{
+    font-size: 14px;
+    line-height: 20px;
+    color:var(--secondary-text-color);
+}
+h1,h2,h3, h4, h5, h6, p{
+    margin: 0;
+}
+p{
+font-size: 14px;
+font-weight: 550;
+line-height: 20px;
+}
 
 header{
 margin: auto;
 display: flex;
 justify-content: center;
 background-color: #ffffff;
+padding: 12px;
 }
 .container{
     max-width: 1050px;
@@ -33,7 +47,6 @@ background-color: #ffffff;
     display: flex;
     align-items: center;
     gap: 21px;
-    padding: 0px 0px 20px;
 }
 
 .brandName{
@@ -61,12 +74,13 @@ a{
     color:var(--secondary-text-color);
    } 
 
-.title_buttons{
+.title_btns{
     display: flex;
     gap: 10px;
+
 }
 
-button{
+ button{
     padding: 15px 25px 15px 25px;
 }
 
@@ -77,6 +91,7 @@ button{
 }
 
 .filled_btn{
+    font-weight: 600;
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -85,7 +100,9 @@ button{
     border: 0;
     border-radius: 5px;
     font-size: 14px;
-    letter-spacing: 0.2px;
+}
+.filled_btn i{
+font-size: 12px;
 }
 
 .homePage{
@@ -102,13 +119,15 @@ button{
  }
 
  .content{
-    width: 675px;
+    max-width: 599px;
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
+    padding: 80px 0px 80px 45px;
+    gap:35px;
  }
 
  .content h5{
+    
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1px;
@@ -122,11 +141,11 @@ button{
     color: var(--primary-text-color);
  }
 
- p{
+.container_home p{
     font-weight: 550;
     font-size: 20px;
     line-height: 30px;
-    color:var(--secondary-text-color);
+    
  }
 
   .unfilled_btn{
@@ -143,21 +162,28 @@ button{
     padding-top: 50px;
   }
   .homePage_cards .container{
-    max-width: 1040px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     gap:68px
   }
-
+.container{
+    margin: auto;
+    max-width: 1040px;
+}
  .card{
 padding: 35px 40px;
 max-width: 328px;
 box-shadow: 0px 13px 19px 0px #00000012;
- ;
+display: flex;
+flex-direction: column;
+gap: 20px;
 
  }
  .card_btn{
+    max-width: 70px;
+    max-height: 76px;
     border-radius: 10px;
     padding: 22px 19px;
     background-color: var(--primary-color);
@@ -165,9 +191,6 @@ box-shadow: 0px 13px 19px 0px #00000012;
     color: #ffffff;
  }
  .card h1{
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
     color: var(--primary-text-color);
 }
  .card p{
@@ -182,4 +205,18 @@ box-shadow: 0px 13px 19px 0px #00000012;
  width: 50px;
  height:2px;
  color: #E74040;
+ }
+
+.img_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 160px 0px;
+}
+ .layout2_content{
+    display: flex;
+    flex-direction: column;
+ }
+ .layout2_content p{
+    max-width: 351px;
  }
