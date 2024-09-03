@@ -20,13 +20,6 @@ img {
     width: 100%;
 }
 
-p {
-    font-size: 14px;
-    line-height: 20px;
-    color: var(--secondary-text-color);
-    font-weight: 550;
-}
-
 h1,
 h2,
 h3,
@@ -39,8 +32,17 @@ p {
 
 p {
     font-size: 14px;
-    font-weight: 550;
     line-height: 20px;
+    color: var(--secondary-text-color);
+    font-weight: 550;
+    letter-spacing: 0.2px;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--primary-color);
+    letter-spacing: 0.2px;
 }
 
 /* header_section */
@@ -160,7 +162,6 @@ button {
 }
 
 .container_home p {
-    font-weight: 550;
     font-size: 20px;
     line-height: 30px;
 
@@ -220,11 +221,6 @@ button {
     line-height: 24px;
 }
 
-.card p {
-    font-size: 14px;
-    line-height: 20px;
-}
-
 button i {
     font-size: 25px;
 }
@@ -255,8 +251,6 @@ button i {
 
 .layout2_content p {
     max-width: 351px;
-    font-size: 14px;
-    line-height: 20px;
 }
 
 .layout2_content h2 {
@@ -267,9 +261,6 @@ button i {
 }
 
 .layout2_content h6 {
-    color: var(--primary-color);
-    font-size: 14px;
-    line-height: 24px;
     display: inline-flex;
     align-items: center;
     gap: 5px;
@@ -287,20 +278,12 @@ button i {
 
 /* layout_3 */
 
-
-
 .layout3_content {
     max-width: 691px;
     margin: 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.layout3_content h6 {
-    font-size: 14px;
-    line-height: 24px;
-    color: var(--primary-color);
 }
 
 .layout3_content h2 {
@@ -311,7 +294,7 @@ button i {
 }
 
 .layout3_content p {
-    max-width: 469px;
+    min-width: 469px;
 }
 
 .card_1 {
@@ -339,8 +322,6 @@ button i {
 
 .sale_logo h6 {
     align-items: center;
-    font-size: 14px;
-    line-height: 24px;
     color: #ffffff;
 
 }
@@ -384,14 +365,9 @@ button i {
 }
 
 .card_content h6 {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--primary-color);
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
 }
 
 .card_content .filled_btn {
@@ -417,11 +393,6 @@ button i {
     font-size: 16px;
     line-height: 24px;
     color: var(--primary-text-color);
-}
-
-.card_content p {
-    font-size: 14px;
-    line-height: 20px;
 }
 
 .card_content h3 i {
@@ -507,13 +478,6 @@ button i {
     padding: 160px 0px 160px 0px;
 }
 
-.layout4_content h6 {
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: var(--primary-color);
-}
-
 .layout4_content h1 {
     font-size: 40px;
     line-height: 50px;
@@ -521,11 +485,6 @@ button i {
     color: var(--primary-text-color);
 }
 
-.layout4_content p {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-}
 
 /* layout4_card */
 
@@ -587,9 +546,7 @@ button i {
 
 .pricing_card h6 {
     max-width: 203px;
-    font-size: 14px;
-    line-height: 24px;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
 
 .pricing_card .money {
@@ -600,14 +557,14 @@ button i {
 
 .pricing_card .money h6 {
     color: #8EC2F2;
-    letter-spacing: 0.2px;
 }
 
 .pricing_card p {
-    letter-spacing: 0.2px;
     max-width: 199px;
 }
-
+.pricing_card h6{
+    color: #737373;
+}
 .pricing_card button {
     display: flex;
     padding: 15px 40px;
@@ -621,7 +578,6 @@ button i {
 
 .pricing_card button h6 {
     line-height: 22px;
-    letter-spacing: 0.2px;
     color: #ffffff;
 }
 
@@ -644,10 +600,6 @@ button i {
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-
-.spec h6 {
-    color: var(--primary-text-color);
 }
 
 .spec.e {
@@ -680,14 +632,6 @@ button i {
     gap: 10px;
     padding: 160px 0px 80px 0px;
 }
-
-.layout5_content h6 {
-    color: var(--primary-color);
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-}
-
 .layout5_content h2 {
     font-size: 40px;
     line-height: 50px;
@@ -710,7 +654,6 @@ button i {
 .testimoni_content p {
     max-width: 320px;
     text-align: center;
-    letter-spacing: 0.2px;
 }
 
 .testimoni_content .rating_star {
@@ -752,17 +695,16 @@ button i {
 }
 
 .testimoni_content .name_desgin h6 {
-    font-size: 14px;
-    line-height: 24px;
-    color: #737373;
+ color: #737373;
 }
 
 /* layout_6 */
 
-.layout_6{
+.layout_6 {
     background-color: #FFDCD1;
 }
-.layout6_content{
+
+.layout6_content {
     padding-top: 160px;
     max-width: 691px;
     display: flex;
@@ -772,36 +714,36 @@ button i {
     justify-content: center;
 }
 
-.layout6_page{
+.layout6_page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.layout6_content h6{
-    color: var(--primary-color);
-    font-size: 14px;
-    line-height: 24px;
-}
-.layout6_content h2{
+
+.layout6_content h2 {
     color: var(--primary-text-color);
     line-height: 50px;
     font-size: 40px;
 }
-.layout6_content p{
+
+.layout6_content p {
     max-width: 469px;
     text-align: center;
 }
-.gmail{
+
+.gmail {
     display: flex;
     align-items: center;
 }
-form{
+
+form {
     padding: 80px 0px 162px 0px;
     display: flex;
     position: relative;
 }
-.mail_box{
+
+.mail_box {
     min-width: 688px;
     height: 58px;
     display: flex;
@@ -810,76 +752,86 @@ form{
     outline: none;
     padding-left: 20px;
 }
-.gmail .sub{
+
+.gmail .sub {
     position: absolute;
     right: 1px;
     height: 58px;
     background-color: var(--primary-color);
     border: 1px solid #E6E6E6;
-    border-radius:0px  5px 5px 0px;
+    border-radius: 0px 5px 5px 0px;
     color: #ffffff;
 }
- ::placeholder{
+
+::placeholder {
     font-size: 14px;
     line-height: 28px;
     letter-spacing: 0.2px;
     font-weight: 550;
     color: var(--secondary-text-color);
- }
+}
 
 
- /* layout_7 */
+/* layout_7 */
 
 
- .grid_container{
+.grid_container {
     display: grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 80px 0px 80px 0px;
     gap: 40px;
- }
- .foot_card{
+}
+
+.foot_card {
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
     padding-bottom: 80px;
- }
- .foot_card h3  {
+}
+
+.foot_card h3 {
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0.1px;
     color: var(--primary-text-color);
- }
- .foot_card h5 a{
-    color: var(--secondary-text-color);
-line-height: 24px;
-letter-spacing: 0.2px;
-font-size: 14px;
+}
 
- }
- .foot_card .list {
+.foot_card h5 a {
+    color: var(--secondary-text-color);
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+
+}
+
+.foot_card .list {
     display: flex;
     flex-direction: column;
     gap: 10px;
- }
-  .social_media {
+}
+
+.social_media {
     display: flex;
     flex-direction: column;
     gap: 25px;
- }
+}
 
 .social_icon {
     display: flex;
     gap: 25px;
- 
+
     font-size: 25px;
 }
-.social_icon a{
+
+.social_icon a {
     color: var(--primary-color);
 }
-.social_media p a{
+
+.social_media p a {
     max-width: 211px;
 }
-.footer{
+
+.footer {
     display: flex;
     align-items: center;
     justify-content: center;
