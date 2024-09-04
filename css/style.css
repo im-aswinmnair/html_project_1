@@ -135,7 +135,7 @@ button {
     align-items: center;
     justify-content: space-evenly;
     background: var(--homepage_banner-color);
-    max-width: 1300px;
+    max-width: 1044px;
     margin: auto;
 }
 
@@ -143,7 +143,7 @@ button {
     max-width: 599px;
     display: flex;
     flex-direction: column;
-    padding: 80px 0px 80px 45px;
+    padding: 80px 0px 80px 40px;
     gap: 35px;
 }
 
@@ -164,7 +164,7 @@ button {
 .container_home p {
     font-size: 20px;
     line-height: 30px;
-
+    max-width: 376px;
 }
 
 .unfilled_btn {
@@ -294,7 +294,7 @@ button i {
 }
 
 .layout3_content p {
-    min-width: 469px;
+    max-width: 469px;
 }
 
 .card_1 {
@@ -484,7 +484,9 @@ button i {
     letter-spacing: 0.2px;
     color: var(--primary-text-color);
 }
-
+.layout4_content p{
+    max-width: 469px;
+}
 
 /* layout4_card */
 
@@ -521,6 +523,36 @@ button i {
     display: flex;
     flex-direction: column;
     gap: 35px;
+
+}
+.pricing_card:hover{
+    background: #2b6d7e;
+}
+.pricing_card:hover .rating_icon{
+    background-color: #f82061;
+}
+.pricing_card:hover  h3{
+    color: #ffe600;
+}
+.pricing_card:hover h6{
+    color: #ffffff;
+}
+.pricing_card:hover .money{
+    color: #12f71d;
+}
+.pricing_card:hover .money h6{
+    color: #ffffff;
+}
+.pricing_card:hover p{
+    color: #ffffff;
+}
+.pricing_card:hover button{
+    background-color: #010363;
+    color: #fff133;
+}
+.pricing_card:hover .features i{
+    color: #ff0263;
+    background-color: #ffffff;
 }
 
 .rating_icon {
@@ -593,7 +625,7 @@ button i {
     border-radius: 200px;
     background-color: transparent;
     color: var(--primary-color);
-    font-size: 35px;
+    font-size: 36px;
 }
 
 .features {
@@ -602,7 +634,7 @@ button i {
     gap: 15px;
 }
 
-.spec.e {
+.spec.a.e i{
     align-items: flex-start;
 }
 
@@ -612,12 +644,7 @@ button i {
     justify-content: center;
     gap: 25px;
 }
-
 .features .spec.a i {
-    color: #BDBDBD;
-}
-
-.features .spec.e i {
     color: #BDBDBD;
 }
 
@@ -637,6 +664,9 @@ button i {
     line-height: 50px;
     letter-spacing: 0.2px;
     color: var(--primary-text-color);
+}
+.layout5_content p{
+    max-width: 469px;
 }
 
 .testimoni {
