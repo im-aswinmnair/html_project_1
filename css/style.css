@@ -10,14 +10,16 @@ body {
 
 :root {
     --primary-color: #23A6F0;
-    --primary-text-color: #252B42;
-    --secondary-text-color: #737373;
-    --homepage_banner-color: #b2e3ff;
-    --primary_line_block-color: #E74040;
+    --primary_text-color: #252B42;
+    --primary_paragrph-color: #737373;
+    --hero_banner-color: #b2e3ff;
+    --primary_block_div-color: #E74040;
+    --button_text_color: #fff;
+    --primary_navbar_color: #737373;
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 h1,
@@ -45,6 +47,18 @@ h6 {
     letter-spacing: 0.2px;
 }
 
+.btn {
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    border: none;
+    padding: 15px 25px;
+    color: var(--button_text_color);
+    background-color: var(--primary-color);
+}
+
 /* header_section */
 
 
@@ -69,7 +83,7 @@ header {
 
 .brandName {
     font-size: 24px;
-    color: var(--primary-text-color);
+    color: var(--primary_text-color);
     padding: 10px;
 }
 
@@ -87,47 +101,30 @@ header {
     font-size: 14px;
 }
 
-a {
+.nav_bar ul a {
     text-decoration: none;
-    color: var(--secondary-text-color);
-}
-
-.title_btns {
-    display: flex;
-    gap: 10px;
-
-}
-
-button {
-    padding: 15px 25px 15px 25px;
+    color: var(--primary_navbar_color)
 }
 
 .blank_btn {
     background-color: transparent;
-    border: 0;
     color: var(--primary-color);
 }
 
 .filled_btn {
-    font-weight: 600;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    background: var(--primary-color);
-    color: #ffffff;
-    border: 0;
-    border-radius: 5px;
-    font-size: 14px;
+    gap: 15px;
 }
 
 .filled_btn i {
-    font-size: 12px;
+    font-size: 14px;
 }
 
-/* home_page_banner */
+/*banner_section */
 
-.homePage {
-    background-color: var(--homepage_banner-color);
+.banner{
+    background-color:var(--hero_banner-color)
 }
 
 .container_home {
@@ -484,7 +481,8 @@ button i {
     letter-spacing: 0.2px;
     color: var(--primary-text-color);
 }
-.layout4_content p{
+
+.layout4_content p {
     max-width: 469px;
 }
 
@@ -525,32 +523,41 @@ button i {
     gap: 35px;
 
 }
-.pricing_card:hover{
+
+.pricing_card:hover {
     background: #2b6d7e;
 }
-.pricing_card:hover .rating_icon{
+
+.pricing_card:hover .rating_icon {
     background-color: #f82061;
 }
-.pricing_card:hover  h3{
+
+.pricing_card:hover h3 {
     color: #ffe600;
 }
-.pricing_card:hover h6{
+
+.pricing_card:hover h6 {
     color: #ffffff;
 }
-.pricing_card:hover .money{
+
+.pricing_card:hover .money {
     color: #12f71d;
 }
-.pricing_card:hover .money h6{
+
+.pricing_card:hover .money h6 {
     color: #ffffff;
 }
-.pricing_card:hover p{
+
+.pricing_card:hover p {
     color: #ffffff;
 }
-.pricing_card:hover button{
+
+.pricing_card:hover button {
     background-color: #010363;
     color: #fff133;
 }
-.pricing_card:hover .features i{
+
+.pricing_card:hover .features i {
     color: #ff0263;
     background-color: #ffffff;
 }
@@ -594,9 +601,11 @@ button i {
 .pricing_card p {
     max-width: 199px;
 }
-.pricing_card h6{
+
+.pricing_card h6 {
     color: #737373;
 }
+
 .pricing_card button {
     display: flex;
     padding: 15px 40px;
@@ -634,7 +643,7 @@ button i {
     gap: 15px;
 }
 
-.spec.a.e i{
+.spec.a.e i {
     align-items: flex-start;
 }
 
@@ -644,6 +653,7 @@ button i {
     justify-content: center;
     gap: 25px;
 }
+
 .features .spec.a i {
     color: #BDBDBD;
 }
@@ -659,13 +669,15 @@ button i {
     gap: 10px;
     padding: 160px 0px 80px 0px;
 }
+
 .layout5_content h2 {
     font-size: 40px;
     line-height: 50px;
     letter-spacing: 0.2px;
     color: var(--primary-text-color);
 }
-.layout5_content p{
+
+.layout5_content p {
     max-width: 469px;
 }
 
@@ -725,7 +737,7 @@ button i {
 }
 
 .testimoni_content .name_desgin h6 {
- color: #737373;
+    color: #737373;
 }
 
 /* layout_6 */
