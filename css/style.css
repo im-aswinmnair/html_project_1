@@ -19,7 +19,7 @@ body {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 h1,
@@ -46,6 +46,20 @@ h6 {
     line-height: 24px;
     color: var(--primary-color);
     letter-spacing: 0.2px;
+}
+
+h1 {
+    color: var(--primary_text-color);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    color: var(--primary_text-color);
 }
 
 .btn {
@@ -158,7 +172,7 @@ ul {
     font-size: 58px;
     line-height: 80px;
     letter-spacing: 0.2px;
-    color: var(--primary_text-color)
+
 }
 
 .hero p {
@@ -210,13 +224,11 @@ ul {
 }
 
 .card_icon {
-    max-width: 70px;
+    width: 70px;
     border-radius: 10px;
-    padding: 20px 20px;
     background-color: var(--primary-color);
     border: none;
-    color: #ffffff;
-    height: 76px;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,9 +242,7 @@ ul {
 
 .card_icon i {
     font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #ffffff;
 }
 
 .card p::before {
@@ -274,10 +284,6 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: 0.2px;
-    color: var(--primary-text-color);
 }
 
 .perform_content h6 {
@@ -300,13 +306,17 @@ ul {
 
 /* product */
 
+
+
 .product .container {
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    gap: 80px;
+    padding: 110px 0px;
 }
 
-.content_hierarchy {
+.heading_content {
     max-width: 691px;
     margin: 0;
     display: flex;
@@ -314,33 +324,28 @@ ul {
     gap: 10px;
 }
 
-.content_hierarchy h2 {
+.heading_content h2 {
     font-size: 38px;
-    line-height: 50px;
-    letter-spacing: 0.2px;
-    color: var(--primary-text-color);
 }
 
-.content_hierarchy p {
+.heading_content p {
     max-width: 469px;
 }
 
-/* product card_1 */
+/* product card */
 
-.card_1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+.product_items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
 }
 
-.card_item {
+.card_items{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .product_label {
-
     top: 20px;
     left: 20px;
     padding: 0px 10px 0px 10px;
@@ -349,7 +354,7 @@ ul {
     position: absolute;
 }
 
-.product_label h6 {
+.product_label label {
     align-items: center;
     color: #ffffff;
 
@@ -357,175 +362,170 @@ ul {
 
 .card_image {
     position: relative;
-}
-
-
-.product_items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    flex-direction: column;
-    padding: 110px 0px;
-}
-.icon {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 20px;
-    right:10px;
-    width: 100%;
+
 }
 
-.icon button {
-    background-color: transparent;
+.pro_card_icon {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 20px;
+    gap: 10px;
+}
+
+.pro_card_icon button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    align-items: center;
     border: none;
 }
 
 .solid i {
-    border-radius: 30px;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-} 
+    font-size: 15px;
+}
 
-/* 
-.card_features {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 25px 25px 35px 25px;
-} */
-
-
-/* .card_features h6 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-/* } */
-/* 
 .card_features .rating_icon {
     border-radius: 20px;
-    max-width: 50px;
+    width: 50px;
+    height: 25px;
     padding: 5px;
     gap: 5px;
-    background-color: var(--primary-text-color);
-}  */
+    background-color: var(--primary_text-color)
+}
 
-/* .rating_text {
-    font-weight: 550;
+.card_features .rating_icon i {
     font-size: 12px;
-    line-height: 16px;
-    color: #ffffff;
-} */
-
-/* .card_features i {
     color: #FFCE31;
 }
 
-.card_features h1 {
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--primary-text-color);
+.card_features .rating_icon small {
+    font-weight: 550;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
 }
 
-.card_features h3 i {
-    color: var(--secondary-text-color);
+.card_features h6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.card_features h3 {
-    color: var(--secondary-text-color);
+.card_features a {
+    color: #737373;
+    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 14px;
-    line-height: 24px;
 }
 
-.card_features .prices {
+.card_features .price {
     display: flex;
     align-items: center;
     gap: 5px;
-} */
-/* 
-.card_features .prices .amt_1 {
-    line-height: 24px;
     color: #BDBDBD;
 }
 
-.card_features .prices .amt_2 {
-    line-height: 24px;
+.price span {
     color: #40BB15;
+}
+
+.small_icon h6 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
 }
 
 .small_icon {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 15px 0px;
+    gap: 2px;
 }
 
-.small_icon p {
+.small_icon small {
+    color: #737373;
     font-size: 12px;
+    font-weight: 550;
     line-height: 16px;
+    letter-spacing: 0.2px;
 }
 
-.small_icon .property {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+.small_icon h6 .prop {
+    color: #23A6F0;
 }
 
-.small_icon .property i {
-    color: var(--primary-color);
-}
-
-.property.a i {
+.small_icon h6 .prop.a {
     color: #E77C40;
 }
 
-.lay3.unfilled_btn {
-    border-radius: 37px;
-    border: 1px solid var(--primary-color);
+.product_btn .btn {
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 1px solid #23A6F0;
     padding: 10px 20px;
-    gap: 10px;
+}
+.product_btn .btn h6{
+  display: flex;
+  align-items: center;
+    gap:10px;
+}
+
+.product_btn .btn i{
+    font-size: 15px;
+}
+.card_features{
+    gap: 20px;
+    padding: 25px 25px 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* pricing */
+
+.pricing .container{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 80px;
+    padding: 110px 0px;
+}
+
+/* pricing card */
+
+.subscrib_card {
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+    gap: 30px;
+}
 
-/* .lay3.unfilled_btn i {
-    color: var(--primary-color);
-    font-size: 20px;
-} */
-
-
-/* layout_4 */
-
-
-.layout4_content {
-    max-width: 691px;
+.wish_icon{
+    height: 90px;
+    width: 90px;
+    background-color: #40BB15;
+    border-radius: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 160px 0px 160px 0px;
+    align-items: center;
+    justify-content: center;
 }
-
-.layout4_content h1 {
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: 0.2px;
-    color: var(--primary-text-color);
+.wish_icon i {
+    font-size: 30px;
+    color: #ffffff;
 }
-
-.layout4_content p {
-    max-width: 469px;
-}
-
-/* layout4_card */
-
 
 .pricing_details {
     max-width: 348px;
@@ -533,13 +533,25 @@ ul {
     position: relative;
 }
 
+.pricing_details h3{
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--primary_text-color);
+}
+
+
+
+
+
+
+
 .new {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    width: 96px;
-    height: 96px;
+    width: 95px;
+    height: 95px;
     background-color: #E77C40;
     border-radius: 200px;
     top: -37px;
@@ -563,22 +575,8 @@ ul {
 }
 
 
-.rating_icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 96px;
-    height: 96px;
-    background-color: #40BB15;
-    border-radius: 200px;
-}
 
-.rating_icon i {
-    font-size: 45px;
-    color: #ffffff;
-}
-
-.pricing_card h3 {
+.pricing_details h3 {
     font-size: 24px;
     line-height: 32px;
     color: var(--primary-text-color)
@@ -648,12 +646,7 @@ ul {
     align-items: flex-start;
 }
 
-.layout4_card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-}
+
 
 .features .spec.a i {
     color: #BDBDBD;
