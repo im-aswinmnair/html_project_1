@@ -23,11 +23,30 @@
 
   <header class="header">
     <div class="container">
+  <label for="name" class="nav_icon"><span><i class="fa-solid fa-bars-progress"></i></span>
+  </label>
+  <input type="checkbox" id="name" />
       <h3 class="brandName">BrandName</h3>
       <nav class="nav_bar">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#product">Product</a></li>
+          <li>
+            <a href="#product">Product<i class="fa-solid fa-caret-down"></i></a>
+          <ul class="drop_menu">
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Courses</a></li>
+            <li>
+              <a href="#">Membership<i class="fa-solid fa-caret-down"></i></a>
+              <ul class="drop_two">
+                <li><a href="#">Basic</a></li>
+                <li><a href="#">Advance</a></li>
+                <li><a href="#">Premium</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Material</a></li>
+          </ul>
+          </li>
+          
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>

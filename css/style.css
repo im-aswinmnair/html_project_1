@@ -819,9 +819,86 @@ form .btn {
     padding: 25px 0px;
 }
 
+.nav_bar ul a {
+    display: flex;
+    gap: 5px;
+    align-items: center;
 
+}
 
+.nav_bar ul li {
+    position: relative;
 
+}
+
+.drop_menu {
+    flex-direction: column;
+    position: absolute;
+    left: 0px;
+    padding: 0;
+    width: 120px;
+    background-color: var(--hero_banner-color);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    margin-top: -20px;
+    border-radius: 10px;
+    align-items: flex-start;
+    padding: 20px 5px;
+    box-shadow: 0px 13px 19px 0px #00000012;
+    ;
+}
+
+.drop_menu li a {
+    color: var(--primary_text-color);
+    font-size: 12px;
+}
+
+.nav_bar li:hover .drop_menu {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+}
+
+.drop_two {
+    flex-direction: column;
+    position: absolute;
+    width: 90px;
+    background-color: white;
+    left: 70px;
+    padding: 0;
+    box-shadow: 0px 13px 19px 0px #00000012;
+    padding: 15px 5px;
+    border-radius: 10px;
+    margin-top: -20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.drop_two li a {
+    color: var(--primary_text-color);
+}
+
+.drop_menu li:hover .drop_two {
+    visibility: visible;
+    opacity: 1;
+    margin: 0;
+}
+
+#name {
+    display: none;
+}
+
+#name:checked~.nav_bar ul {
+    display: block;
+}
+
+.nav_icon {
+    color: #252B42;
+    padding: 5px;
+    display: none;
+}
 
 @media screen and (max-width:920px) {
 
@@ -859,246 +936,274 @@ form .btn {
         display: none;
     }
 
-    .brandName {
-        flex: 1;
+    .nav_icon {
+        display: block;
     }
 
-    .btn {
-        font-size: 12px;
-        line-height: 15px;
-        padding: 10px 10px;
-    }
-
-    .filled_btn i {
-        font-size: 10px;
-    }
-
-    .filled_btn {
-        gap: 10px;
-    }
-
-    .nav_bar {
-        justify-content: end;
-    }
-
-    .hero .image {
-        display: none;
-    }
-
-    .hero_heading {
-        text-align: center;
-        align-items: center;
-        padding: 10px;
-        gap: 10px;
-    }
-
-    .hero_heading h1 {
-        font-size: 35px;
-        line-height: 40px;
-    }
-
-    .hero p {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .hero_heading h5 {
-        font-size: 10px;
-    }
-
-    .hero {
-        padding: 20px 0px;
-    }
-
-    .hero_btn .filled_btn {
-        padding: 11px 15px;
-    }
-
-    .performance .image {
-        display: none;
-    }
-
-    .perform_content h2::before {
-        display: none;
-    }
-
-    .performance .container {
-        padding: 20px 0px;
-        justify-content: center;
-    }
-
-    .perform_content {
-        max-width: 100%;
-        align-items: center;
+    .nav_bar ul {
         padding: 0px;
-    }
-
-    .footer_grid {
-        gap: 50px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .gmail .mail_box {
-        height: 50px;
-    }
-
-    form {
-        width: 500px
-    }
-
-    .subscribtion .container {
-        padding: 80px 0px;
-    }
-
-    .heading_content {
-        gap: 0px;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    h6 {
-        font-size: 10px;
-    }
-
-    p {
-        font-size: 10px;
-    }
-
-    .perform_content {
-        gap: 5px;
-    }
-
-    header {
-        padding: 0px;
-    }
-
-}
-
-
-@media screen and (max-width:680px) {
-
-    .facilities .container {
-        grid-template-columns: repeat(1, 3fr);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .product_items {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .product .container {
-        text-align: center;
-    }
-
-    .pricing .heading_content {
-        align-items: center;
-        text-align: center;
-    }
-
-    .pricing .heading_content {
-        align-items: center;
-    }
-
-    .testimoni {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .testimoniels .container{
-        text-align: center;
-    }
-
-    .pricing_details {
-        padding: 50px 100px;
-    }
-
-    .subscrib_card {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-}
-
-
-@media screen and (max-width:530px) {
-
-    .hero_heading {
-        gap: 15px;
-    }
-
-    .perform_content h2 {
-        text-align: center;
-    }
-
-    .perform_content p {
-        text-align: center;
-    }
-
-    .heading_content {
-        text-align: center;
-    }
-
-    .card_features {
-        gap: 30px;
-    }
-
-    .pricing_details {
-        padding: 50px;
-    }
-
-    .testimoni {
-        gap: 0px;
-    }
-
-    .subscribtion .container {
-        gap: 20px;
-    }
-
-    form {
+        position: fixed;
+        background: antiquewhite;
+        left: 0px;
+        margin: 0;
+        top: 50`px;
+        height: 100%;
         width: 300px;
+        box-shadow: 0px 13px 19px 0px #00000030;
+    }
+        .brandName {
+            flex: 1;
+        }
+
+        .btn {
+            font-size: 12px;
+            line-height: 15px;
+            padding: 10px 10px;
+        }
+
+        .filled_btn i {
+            font-size: 10px;
+        }
+
+        .filled_btn {
+            gap: 10px;
+        }
+
+        .nav_bar {
+            justify-content: end;
+        }
+
+        .hero .image {
+            display: none;
+        }
+
+        .hero_heading {
+            text-align: center;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .hero_heading h1 {
+            font-size: 35px;
+            line-height: 40px;
+        }
+
+        .hero p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .hero_heading h5 {
+            font-size: 10px;
+        }
+
+        .hero {
+            padding: 20px 0px;
+        }
+
+        .hero_btn .filled_btn {
+            padding: 11px 15px;
+        }
+
+        .performance .image {
+            display: none;
+        }
+
+        .perform_content h2::before {
+            display: none;
+        }
+
+        .performance .container {
+            padding: 20px 0px;
+            justify-content: center;
+        }
+
+        .perform_content {
+            max-width: 100%;
+            align-items: center;
+            padding: 0px;
+        }
+
+        .footer_grid {
+            gap: 50px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .gmail .mail_box {
+            height: 50px;
+        }
+
+        form {
+            width: 500px
+        }
+
+        .subscribtion .container {
+            padding: 80px 0px;
+        }
+
+        .heading_content {
+            gap: 0px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h6 {
+            font-size: 10px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        .perform_content {
+            gap: 5px;
+        }
+
+        header {
+            padding: 0px;
+        }
+
     }
 
-    .gmail .mail_box {
-        height: 31px;
+
+    @media screen and (max-width:680px) {
+
+        .facilities .container {
+            grid-template-columns: repeat(1, 3fr);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .product_items {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product .container {
+            text-align: center;
+        }
+
+        .pricing .heading_content {
+            align-items: center;
+            text-align: center;
+        }
+
+        .pricing .heading_content {
+            align-items: center;
+        }
+
+        .testimoni {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .testimoniels .container {
+            text-align: center;
+        }
+
+        .pricing_details {
+            padding: 50px 100px;
+        }
+
+        .subscrib_card {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
     }
 
-    form .btn {
-        line-height: 10px;
-        font-size: 10px;
+
+    @media screen and (max-width:530px) {
+
+        .hero_heading {
+            gap: 15px;
+        }
+
+        .perform_content {
+            padding: 0px 50px;
+        }
+
+        .perform_content h2 {
+            text-align: center;
+        }
+
+        .perform_content p {
+            text-align: center;
+        }
+
+        .foot_list h3 {
+            font-size: 25px;
+        }
+
+        .heading_content h6 {
+            font-size: 5px;
+        }
+
+        .testimoni_details {
+            padding: 5px;
+        }
+
+        .heading_content {
+            text-align: center;
+        }
+
+        .card_features {
+            gap: 30px;
+        }
+
+        .pricing_details {
+            padding: 50px;
+        }
+
+        .testimoni {
+            gap: 0px;
+        }
+
+        .subscribtion .container {
+            gap: 20px;
+        }
+
+        form {
+            width: 300px;
+        }
+
+        .gmail .mail_box {
+            height: 31px;
+        }
+
+        form .btn {
+            line-height: 10px;
+            font-size: 10px;
+        }
+
+        .footer_grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        h2 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .performance .container {
+            padding: 50px 0px;
+        }
+
+        p {
+            font-size: 8px;
+        }
+
+        .card_features {
+            gap: 15px;
+        }
+
+
     }
-
-    .foot_list h3 {
-        font-size: 30px
-    }
-
-    .footer_grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    h2 {
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    .performance .container {
-        padding: 50px 0px;
-    }
-
-    p {
-        font-size: 8px;
-    }
-
-    .card_features {
-        gap: 15px;
-    }
-
-
-}
