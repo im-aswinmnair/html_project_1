@@ -846,7 +846,7 @@ form .btn {
     align-items: flex-start;
     padding: 20px 5px;
     box-shadow: 0px 13px 19px 0px #00000012;
-    
+
 }
 
 .drop_menu li a {
@@ -881,17 +881,21 @@ form .btn {
 #name {
     display: none;
 }
-#ham_drop{
+
+#ham_drop {
     display: none;
 }
-#ham_two{
+
+#ham_two {
     display: none;
 }
-.pro{
+
+.pro {
     display: flex;
     gap: 5px;
 }
-.memb{
+
+.memb {
     display: flex;
     gap: 5px;
 }
@@ -901,7 +905,7 @@ form .btn {
     padding: 5px;
     display: none;
 }
-    
+
 
 @media screen and (max-width:920px) {
 
@@ -930,6 +934,7 @@ form .btn {
     }
 
 }
+
 @media screen and (min-width:780px) {
     .drop_menu li:hover .drop_two {
         visibility: visible;
@@ -949,13 +954,14 @@ form .btn {
 
     .header {
         padding: 10px;
-        height: 90px;
+        height: 70px;
         position: fixed;
         width: 100%;
-        z-index: 1;   
+        z-index: 1;
     }
-    .hero_heading{
-        margin-top: 90px;
+
+    .hero_heading {
+        margin-top: 70px;
     }
 
     .nav_icon {
@@ -968,47 +974,62 @@ form .btn {
         opacity: 0;
         padding: 20px;
         position: fixed;
-        background: antiquewhite;
+        background: var(--hero_banner-color);
         left: -100%;
         margin: 0;
-        top: 90px;
-        height: calc(100% - 90px);
+        top: 70px;
+        height: calc(100% - 70px);
         width: 200px;
         overflow: auto;
         box-shadow: 0px 13px 19px 0px #00000030;
         transition: all 0.6s ease-in-out;
     }
-    
-    #name:checked ~.nav_bar ul {
+
+    #name:checked~.nav_bar ul {
         visibility: visible;
         left: 1px;
         opacity: 1;
-       
     }
-.drop_menu{
-    display: none;
-}
 
-.drop_two{
-    display:none 
-}
-#ham_drop:checked ~ .drop_menu{
-    
-    position: relative;
-  top: 5px;
-  height: 100px;
-  width: 149px;
-  left: 0;
-  display: flex;
-  
-  flex-direction: column;
-    gap: 5px;
-    padding: 5px 10px;
-    align-items: flex-start;
-    justify-content: center;
-}
+    .drop_menu {
 
+        display: none;
+    }
 
+    .drop_two {
+        display: none;
+    }
+
+    .drop_menu li a {
+        color: var(--primary_navbar_color);
+    }
+
+    #ham_drop:checked~.drop_menu {
+        position: relative;
+        top: 10px;
+        height: 130px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 15px;
+    }
+#ham_two:checked~.drop_two{
+ display: flex;
+ position: relative;
+ top: 5px;
+ width: 100px;
+ left: 31px;
+ gap: 5px;
+ height: 100px;
+ padding: 0px 0px 0px 5px;
+ justify-content: center;
+ margin: 0px;
+ z-index: 5;
+ right: 63px
+}
 
 
 
