@@ -905,7 +905,9 @@ form .btn {
     padding: 5px;
     display: none;
 }
-
+.nav_bar ul  li .btn.blank_btn {
+    display: none;
+}
 
 @media screen and (max-width:920px) {
 
@@ -951,7 +953,13 @@ form .btn {
 
 
 @media screen and (max-width:780px) {
-
+    .nav_bar ul  li .btn.blank_btn {
+        display:block;
+        padding: 10px 0px;
+    }
+    .nav_bar .title_btn .btn.blank_btn{
+        display: none;
+    }
     .header {
         padding: 10px;
         height: 70px;
