@@ -1293,6 +1293,9 @@ form .btn {
     .card_features {
         gap: 15px;
     }
+    ::placeholder{
+        font-size: 8`px;
+    }
 
 
 }
